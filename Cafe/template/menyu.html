@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% load  static  %}
+{% block content %}
+{% csrf_token %}
+
+
+
+{% for menyu in menyuies %}
+
+
+<a href={% url 'menyu_detail' menyu.pk %}><img src="media/{{ menyu.menyu_image}}" style="margin: 20px; " class='light' width="350" heigt='300'></a>
+ 
+{% endfor %}
+
+
+{% endblock  %}
+

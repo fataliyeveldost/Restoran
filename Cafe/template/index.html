@@ -1,0 +1,42 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href={% static 'style.css' %}>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+{% include 'navbar.html' %}
+    
+{% block content %}
+    <h1 class='h1class'>Özsüt</h1>
+
+    <img src="https://ozsut1.owbike.com/uploads/apps/owphoto/2000x600/s3u20mcb1se50zmr6ou9.png" class="img-fluid" alt="...">
+    <br><br><br>
+    <h1>Hekayəmiz</h1>
+    <p class='word'>ÖzSüt-ün hekayəsi İzmir Kemeraltında 16 kv. metrlik bir məkanda başlayıb. Daha sonra Səfər ustanın yolu Osmanlı sarayından çıxan bir usta ilə kəsişir. Bu 1938-ci ilə təsadüf edir. Səfər usta bu torpaqlarla yoğrulmuş ənənəvi qənnadı sirrlərini  ÖzSüt-ün yaddaşına bir-bir həkk etməyi bacarır. O gün açılan qapı bir daha heç vaxt bağlanmır.</p>
+    <br>
+    <img src="https://ozsut1.owbike.com/uploads/apps/owphoto/2000x600/2gssL26ql5b2cuhsDrtaa8.png" class="img-fluid" alt="...">
+    <br><br><br>
+
+    <h1>Sirniyyatlarimiz</h1>
+    <dir class='indeximg' >
+        <a href=""><img class='oneindex' src="https://ozsut1.owbike.com/uploads/apps/owphoto/365x470/2A936883558D010884.png" class="img-thumbnail" alt="..."></a>
+
+        <a href=""><img class='twoindex' src="https://ozsut1.owbike.com/uploads/apps/owphoto/365x470/9D36753408999A1950.png" class="img-thumbnail" alt="..."></a>
+
+        <a href=""><img class='threeindex' src="https://ozsut1.owbike.com/uploads/apps/owphoto/365x470/55183610489D64801A.png" class="img-thumbnail" alt="..."></a>
+    </dir>
+    <br><br>
+
+{% endblock  %}
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+</body>
+</html>

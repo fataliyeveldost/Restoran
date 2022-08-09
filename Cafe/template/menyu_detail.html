@@ -1,0 +1,19 @@
+{% extends 'index.html' %}
+{% load static %}
+
+{% block content %}
+<br>
+{% if user.is_superuser %}
+    <a href={% url 'menyu_update' menyu.pk %} class="btn btn-secondary">Edit</a>
+    <a href={% url 'menyu_delete' menyu.pk %} class="btn btn-secondary">Delete</a>
+{% endif %}
+<br><br>
+<ul>
+    <img src="/media/{{ menyu.menyu_image }} " class='light' width="400" heigt='400'>
+    <br><br>
+    <li>{{menyu.title}}</li>
+    <br>
+    <li>{{menyu.content}}</li>
+</ul>
+
+{% endblock  %}
